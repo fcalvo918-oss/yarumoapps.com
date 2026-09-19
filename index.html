@@ -1,150 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Yarumo — Something New Is Coming</title>
-
-    <meta
-        name="description"
-        content="Yarumo is preparing something new. More information will be available soon.">
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            color-scheme: dark;
-        }
-
-        body {
-            min-height: 100vh;
-            margin: 0;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         Arial, sans-serif;
-            color: #f8fafc;
-            background:
-                radial-gradient(
-                    circle at 80% 20%,
-                    rgba(233, 120, 36, 0.18),
-                    transparent 30rem
-                ),
-                linear-gradient(145deg, #071827, #0b2a45);
-        }
-
-        .container {
-            position: relative;
-            z-index: 1;
-            width: min(760px, calc(100% - 40px));
-            padding: 72px 24px;
-            text-align: center;
-        }
-
-        .brand {
-            margin: 0 0 22px;
-            color: #ff9345;
-            font-size: 1rem;
-            font-weight: 800;
-            letter-spacing: 0.28em;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: clamp(3rem, 9vw, 6rem);
-            line-height: 0.98;
-            letter-spacing: -0.05em;
-        }
-
-        .intro {
-            max-width: 580px;
-            margin: 30px auto 0;
-            color: #cbd9e4;
-            font-size: clamp(1.05rem, 2vw, 1.25rem);
-            line-height: 1.7;
-        }
-
-        .status {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 38px;
-            padding: 10px 16px;
-            color: #e7eef4;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 999px;
-            font-size: 0.9rem;
-            font-weight: 700;
-        }
-
-        .status::before {
-            width: 8px;
-            height: 8px;
-            content: "";
-            background: #ff9345;
-            border-radius: 50%;
-            box-shadow: 0 0 16px rgba(255, 147, 69, 0.7);
-        }
-
-        footer {
-            margin-top: 70px;
-            color: #8fa4b5;
-            font-size: 0.88rem;
-        }
-
-        .orb {
-            position: fixed;
-            border: 1px solid rgba(255, 147, 69, 0.12);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .orb-one {
-            top: -180px;
-            left: -180px;
-            width: 440px;
-            height: 440px;
-        }
-
-        .orb-two {
-            right: -240px;
-            bottom: -240px;
-            width: 560px;
-            height: 560px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ferchocol Software website design portfolio concept for small businesses. Explore a fictional restaurant sample and straightforward website packages.">
+  <title>Ferchocol Software — Small business website design</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310222e'/%3E%3Cpath d='M17 13h31v8H25v9h19v8H25v14h-8V13Z' fill='%23ffad70'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ferchocol Software home"><img src="assets/FerchocolLogo.svg" alt="Ferchocol Software"></a>
+    <nav aria-label="Main navigation"><a href="#work">Sample work</a><a href="#packages">Packages</a><a href="#approach">Approach</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WEBSITE DESIGN FOR SMALL BUSINESSES</p>
+        <h1 id="hero-title">A website that makes the next step <em>easy.</em></h1>
+        <p>Clear services, useful information, and a mobile-friendly experience—built around what your customers came to do.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">View the sample site <span aria-hidden="true">↗</span></a><a class="subtle-link" href="#packages">Explore packages</a></div>
+      </div>
+      <img class="hero-photo" src="samples/juniper-table/images/pasta.webp" alt="Fictional restaurant sample: pasta with basil and parmesan">
+    </section>
 
-    <div class="orb orb-one" aria-hidden="true"></div>
-    <div class="orb orb-two" aria-hidden="true"></div>
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="section-intro"><p class="eyebrow">PORTFOLIO CONCEPT</p><h2 id="work-title">See how it could feel.</h2><p>This first example is for an imagined restaurant, not a real client project. Its menu, hours, and location are illustrative.</p></div>
+      <a class="work-card" href="samples/juniper-table/" aria-label="Open fictional Juniper Table restaurant sample">
+        <img src="samples/juniper-table/images/pasta.webp" alt="Pasta with basil and parmesan from the fictional Juniper Table sample" loading="lazy">
+        <div class="work-details"><span class="work-tag">RESTAURANT WEBSITE · FICTIONAL SAMPLE</span><h3>Juniper Table</h3><p>A responsive restaurant concept with a readable menu and easy-to-find hours.</p><span class="card-action">Explore sample <span aria-hidden="true">↗</span></span></div>
+      </a>
+    </section>
 
-    <main class="container">
-        <p class="brand">Yarumo</p>
+    <section class="packages section" id="packages" aria-labelledby="packages-title">
+      <div class="section-intro"><p class="eyebrow">POSSIBLE STARTING PACKAGES</p><h2 id="packages-title">Start with what you need.</h2><p>These are example scopes for discussion, not checkout products or fixed quotes. Final pricing follows a conversation about content and functionality.</p></div>
+      <div class="package-grid">
+        <article><span class="number">01</span><h3>One-page presence</h3><p>A focused homepage with your services or menu, hours, location, and clear ways for customers to reach you.</p><ul><li>Mobile-friendly layout</li><li>Basic search metadata</li><li>Customer-approved content</li></ul></article>
+        <article><span class="number">02</span><h3>Small business site</h3><p>Several pages to explain what you offer, answer common questions, and guide visitors toward booking or contacting you.</p><ul><li>Up to five planned pages</li><li>Responsive navigation</li><li>Links to existing booking tools</li></ul></article>
+        <article><span class="number">03</span><h3>Care &amp; updates</h3><p>An optional ongoing arrangement for small content edits, software updates where relevant, and basic site checks.</p><ul><li>Defined monthly scope</li><li>Hosting priced separately</li><li>No unlimited revisions</li></ul></article>
+      </div>
+    </section>
 
-        <h1>Something new is taking shape.</h1>
-
-        <p class="intro">
-            Yarumo is being prepared for its next chapter.
-            More information will be available when the time is right.
-        </p>
-
-        <div class="status">
-            Coming soon
-        </div>
-
-        <footer>
-            &copy; 2026 Yarumo. All rights reserved.
-        </footer>
-    </main>
-
+    <section class="approach section" id="approach" aria-labelledby="approach-title"><div><p class="eyebrow">HOW WE WOULD WORK</p><h2 id="approach-title">Simple steps.<br>Clear approvals.</h2></div><ol><li><strong>Understand your business.</strong><span>Agree on the audience, content, and the main action visitors should take.</span></li><li><strong>Review a private draft.</strong><span>You approve the design and details before anything goes live.</span></li><li><strong>Launch when ready.</strong><span>Domains, hosting, and publication are handled only with your permission.</span></li></ol></section>
+  </main>
+  <footer><div><a class="brand" href="#top"><img src="assets/FerchocolLogo.svg" alt="Ferchocol Software"></a><p>Portfolio draft for small business website design. No client work or testimonials are claimed.</p></div><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
