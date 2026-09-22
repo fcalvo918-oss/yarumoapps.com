@@ -11,7 +11,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Ferchocol Software home"><img src="assets/FerchocolLogo.svg" alt="Ferchocol Software"></a>
-    <nav aria-label="Main navigation"><a href="#work">Sample work</a><a href="#packages">Packages</a><a href="#approach">Approach</a></nav>
+    <nav aria-label="Main navigation"><a href="#work">Sample work</a><a href="#packages">Packages</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
@@ -41,9 +41,38 @@
       </div>
       <div class="quote-panel">
         <div><p class="eyebrow">NEED A DIFFERENT SCOPE?</p><h3>Request a project quote.</h3><p>Tell me about your business, the pages you need, and your preferred launch timeline. Ongoing care and small updates can also be quoted separately.</p></div>
-        <a class="button button-primary" href="https://www.fiverr.com/ferchocol/build-a-modern-responsive-website-for-your-small-business" target="_blank" rel="noreferrer">Request a quote on Fiverr <span aria-hidden="true">↗</span></a>
+        <a class="button button-primary" href="#contact">Request a quote <span aria-hidden="true">↓</span></a>
       </div>
       <p class="package-note">Domains, hosting fees, paid software, premium assets, e-commerce, payment processing, databases, user accounts, and custom booking systems are not included in these starting prices. Nothing is purchased or published without client approval.</p>
+    </section>
+
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro">
+        <p class="eyebrow">PROJECT INQUIRY</p>
+        <h2 id="contact-title">Tell me what you need.</h2>
+        <p>Share a few details about your business and website goals. This is a quote request, not a purchase or commitment. I will review the information before responding.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mwlpojjg" method="post">
+        <input type="hidden" name="_subject" value="New Ferchocol Software website inquiry">
+        <div class="form-honeypot" aria-hidden="true">
+          <label for="company-url">Leave this field empty</label>
+          <input id="company-url" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-grid">
+          <label><span>Your name</span><input type="text" name="name" autocomplete="name" required></label>
+          <label><span>Email address</span><input type="email" name="email" autocomplete="email" required></label>
+          <label><span>Business name</span><input type="text" name="business_name" autocomplete="organization" required></label>
+          <label><span>Existing website <small>(optional)</small></span><input type="url" name="existing_website" placeholder="https://"></label>
+          <label><span>Project size</span><select name="project_size" required><option value="">Select one</option><option>One-page starter</option><option>Small business site</option><option>Business site plus</option><option>Custom or not sure</option></select></label>
+          <label><span>Estimated budget</span><select name="budget" required><option value="">Select one</option><option>$150–$349</option><option>$350–$599</option><option>$600–$999</option><option>$1,000 or more</option><option>Not sure yet</option></select></label>
+          <label class="form-wide"><span>Preferred timeline</span><select name="timeline" required><option value="">Select one</option><option>Within 2 weeks</option><option>Within 3–4 weeks</option><option>Within 1–2 months</option><option>Flexible or not sure</option></select></label>
+          <label class="form-wide"><span>Project description</span><textarea name="message" rows="7" placeholder="What does your business do, which pages do you need, and what should visitors be able to do?" required></textarea></label>
+        </div>
+        <label class="consent"><input type="checkbox" name="privacy_consent" value="yes" required><span>I agree that Ferchocol Software may use this information to review and respond to my inquiry. See the <a href="privacy.html" target="_blank" rel="noreferrer">privacy notice</a>.</span></label>
+        <button class="button button-primary" type="submit">Send quote request</button>
+        <p class="form-note">Do not include passwords, payment-card information, government identification, or other sensitive information.</p>
+      </form>
     </section>
 
     <section class="approach section" id="approach" aria-labelledby="approach-title"><div><p class="eyebrow">HOW WE WOULD WORK</p><h2 id="approach-title">Simple steps.<br>Clear approvals.</h2></div><ol><li><strong>Understand your business.</strong><span>Agree on the audience, content, and the main action visitors should take.</span></li><li><strong>Review a private draft.</strong><span>You approve the design and details before anything goes live.</span></li><li><strong>Launch when ready.</strong><span>Domains, hosting, and publication are handled only with your permission.</span></li></ol></section>
